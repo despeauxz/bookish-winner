@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Hero from "./components/Hero";
+import ContactUs from "./components/ContactUs";
+import Support from "./components/Support";
+import Collage from "./components/Collage";
+import Carousel from "./components/Carousel";
+import Header from "./components/Header";
+import "./assets/css/normalize.scss";
+import 'animate.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <>
+    <div className="app-container">
+      <section>
+        <Header />
+        <Hero />
+      </section>
+      <Collage />
+      <Carousel />
+      <Support />
     </div>
-  );
-}
+    <ContactUs />
+  </>
+)
 
 export default App;
